@@ -9,12 +9,20 @@ import UIKit
 
 class HomeTableViewHeader: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+    // MARK: Properties
+    
+    // MARK: Outlets
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var viewHeader: UIView!
+    @IBOutlet weak var imageViewBanner: UIImageView!
+    
+    // MARK: Initialization
+    
+    // MARK: Overrides
+    
+    // MARK: Actions
+    
+    // MARK: Methods
+
 
 }

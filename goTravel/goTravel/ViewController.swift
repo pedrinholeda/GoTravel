@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tableViewCellTravels.dataSource = self
         tableViewCellTravels.delegate = self
+        
+        view.backgroundColor = UIColor(displayP3Red: 30.0/225.0, green: 59.0/225.0, blue: 119.0/225.0, alpha: 1)
     }
     
     // MARK: Actions
