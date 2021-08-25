@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hDP-qB-v8X" userLabel="ViewHeader">
-                    <rect key="frame" x="0.0" y="-2" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDP-qB-v8X" userLabel="ViewHeader">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Go Travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOe-OO-M9W">
                             <rect key="frame" x="22" y="52" width="87" height="28"/>
@@ -27,10 +26,12 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="aYF-F8-fVo"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-Vw-OMl" userLabel="ViewBanner">
-                    <rect key="frame" x="19" y="150" width="375" height="130"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-Vw-OMl" userLabel="ViewBanner">
+                    <rect key="frame" x="20" y="130" width="374" height="130"/>
                     <subviews>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-lb-GXx">
                             <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
@@ -43,10 +44,21 @@
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="bkB-0E-gKs"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ipd-Vw-OMl" secondAttribute="trailing" constant="20" id="1qJ-bC-Lwl"/>
+                <constraint firstItem="ipd-Vw-OMl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PML-qO-MVt"/>
+                <constraint firstItem="hDP-qB-v8X" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jZQ-BE-QuT"/>
+                <constraint firstItem="hDP-qB-v8X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pjh-VB-VxD"/>
+                <constraint firstItem="ipd-Vw-OMl" firstAttribute="bottom" secondItem="hDP-qB-v8X" secondAttribute="bottom" constant="10" id="qjo-VY-Zqe"/>
+                <constraint firstItem="hDP-qB-v8X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="v9w-ae-0Ut"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageViewBanner" destination="Rw3-fe-yN9" id="aZL-51-qj8"/>

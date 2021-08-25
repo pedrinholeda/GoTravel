@@ -23,6 +23,9 @@ class HomeTableViewHeader: UIView {
     // MARK: Actions
     
     // MARK: Methods
+    func configHeader() {
+        viewHeader.backgroundColor = UIColor(displayP3Red: 30.0/225.0, green: 59.0/225.0, blue: 119.0/225.0, alpha: 1)
+    }
 
 
 }
