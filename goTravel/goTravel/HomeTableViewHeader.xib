@@ -33,19 +33,25 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-Vw-OMl" userLabel="ViewBanner">
                     <rect key="frame" x="20" y="130" width="374" height="130"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-lb-GXx">
-                            <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-lb-GXx">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
                             <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rw3-fe-yN9">
-                            <rect key="frame" x="198" y="0.0" width="177" height="128"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rw3-fe-yN9">
+                            <rect key="frame" x="197" y="0.0" width="177" height="130"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="dY6-lb-GXx" firstAttribute="top" secondItem="ipd-Vw-OMl" secondAttribute="top" id="EwC-zD-JBr"/>
+                        <constraint firstItem="dY6-lb-GXx" firstAttribute="width" secondItem="ipd-Vw-OMl" secondAttribute="width" multiplier="0.534759" id="P2a-gQ-kOC"/>
+                        <constraint firstAttribute="trailing" secondItem="Rw3-fe-yN9" secondAttribute="trailing" id="YNP-bt-iSa"/>
                         <constraint firstAttribute="height" constant="130" id="bkB-0E-gKs"/>
+                        <constraint firstAttribute="bottom" secondItem="dY6-lb-GXx" secondAttribute="bottom" id="dms-wv-kV6"/>
+                        <constraint firstAttribute="bottom" secondItem="Rw3-fe-yN9" secondAttribute="bottom" id="fQY-IS-WoO"/>
+                        <constraint firstItem="Rw3-fe-yN9" firstAttribute="width" secondItem="ipd-Vw-OMl" secondAttribute="width" multiplier="0.473262" id="khI-W6-Y76"/>
+                        <constraint firstItem="Rw3-fe-yN9" firstAttribute="top" secondItem="ipd-Vw-OMl" secondAttribute="top" id="wAz-8N-kYN"/>
+                        <constraint firstItem="dY6-lb-GXx" firstAttribute="leading" secondItem="ipd-Vw-OMl" secondAttribute="leading" id="y0N-hh-gPM"/>
                     </constraints>
                 </view>
             </subviews>
