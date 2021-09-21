@@ -28,9 +28,6 @@ class ViewController: UIViewController {
     // MARK: Actions
     
     // MARK: Methods
-   
-
-
 }
 
 extension ViewController:UITableViewDataSource {
