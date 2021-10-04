@@ -41,6 +41,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4538BCC270B697E004ED474 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E48AC9EF26D43C6B0002EB85 /* AppDelegate.swift */,
+				E48AC9F126D43C6B0002EB85 /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E4538BCD270B6990004ED474 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E48AC9FA26D43C6C0002EB85 /* LaunchScreen.storyboard */,
+				E48AC9FD26D43C6C0002EB85 /* Info.plist */,
+				E48AC9F826D43C6C0002EB85 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E4538BCE270B69A6004ED474 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				E4538BCF270B6A1D004ED474 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E4538BCF270B6A1D004ED474 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E4538BD0270B6A84004ED474 /* Header */,
+				E48AC9F326D43C6B0002EB85 /* ViewController.swift */,
+				E48AC9F526D43C6B0002EB85 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E4538BD0270B6A84004ED474 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E416136A26D5B35C0078ABCC /* HomeTableViewHeader.xib */,
+				E416136C26D5B4D50078ABCC /* HomeTableViewHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		E48AC9E326D43C6B0002EB85 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +106,9 @@
 		E48AC9EE26D43C6B0002EB85 /* goTravel */ = {
 			isa = PBXGroup;
 			children = (
-				E48AC9EF26D43C6B0002EB85 /* AppDelegate.swift */,
-				E48AC9F126D43C6B0002EB85 /* SceneDelegate.swift */,
-				E48AC9F326D43C6B0002EB85 /* ViewController.swift */,
-				E48AC9F526D43C6B0002EB85 /* Main.storyboard */,
-				E48AC9F826D43C6C0002EB85 /* Assets.xcassets */,
-				E48AC9FA26D43C6C0002EB85 /* LaunchScreen.storyboard */,
-				E48AC9FD26D43C6C0002EB85 /* Info.plist */,
-				E416136A26D5B35C0078ABCC /* HomeTableViewHeader.xib */,
-				E416136C26D5B4D50078ABCC /* HomeTableViewHeader.swift */,
+				E4538BCE270B69A6004ED474 /* Feature */,
+				E4538BCD270B6990004ED474 /* Resources */,
+				E4538BCC270B697E004ED474 /* Sources */,
 			);
 			path = goTravel;
 			sourceTree = "<group>";
@@ -296,12 +336,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VXVGV6J3;
-				INFOPLIST_FILE = goTravel/Info.plist;
+				INFOPLIST_FILE = goTravel/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pedro-leda.goTravel";
+				PRODUCT_BUNDLE_IDENTIFIER = pedro.goTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +355,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5VXVGV6J3;
-				INFOPLIST_FILE = goTravel/Info.plist;
+				INFOPLIST_FILE = goTravel/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pedro-leda.goTravel";
+				PRODUCT_BUNDLE_IDENTIFIER = pedro.goTravel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
