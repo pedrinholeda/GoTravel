@@ -15,6 +15,7 @@ class HomeTableViewHeader: UIView {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var viewHeader: UIView!
     @IBOutlet weak var imageViewBanner: UIImageView!
+    @IBOutlet weak var viewBanner: UIView!
     
     // MARK: Initialization
     
@@ -25,7 +26,10 @@ class HomeTableViewHeader: UIView {
     // MARK: Methods
     func configHeader() {
         viewHeader.backgroundColor = UIColor(displayP3Red: 30.0/225.0, green: 59.0/225.0, blue: 119.0/225.0, alpha: 1)
+        viewHeader.layer.cornerRadius = 500
+        viewHeader.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        
+        viewBanner.layer.cornerRadius = 10
+        viewBanner.layer.masksToBounds = true
     }
-
-
 }
