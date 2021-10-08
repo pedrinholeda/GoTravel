@@ -11,10 +11,12 @@
 		E416136D26D5B4D50078ABCC /* HomeTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E416136C26D5B4D50078ABCC /* HomeTableViewHeader.swift */; };
 		E48AC9F026D43C6B0002EB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AC9EF26D43C6B0002EB85 /* AppDelegate.swift */; };
 		E48AC9F226D43C6B0002EB85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AC9F126D43C6B0002EB85 /* SceneDelegate.swift */; };
-		E48AC9F426D43C6B0002EB85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AC9F326D43C6B0002EB85 /* ViewController.swift */; };
-		E48AC9F726D43C6B0002EB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48AC9F526D43C6B0002EB85 /* Main.storyboard */; };
+		E48AC9F426D43C6B0002EB85 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AC9F326D43C6B0002EB85 /* HomeViewController.swift */; };
+		E48AC9F726D43C6B0002EB85 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48AC9F526D43C6B0002EB85 /* Home.storyboard */; };
 		E48AC9F926D43C6C0002EB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E48AC9F826D43C6C0002EB85 /* Assets.xcassets */; };
 		E48AC9FC26D43C6C0002EB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48AC9FA26D43C6C0002EB85 /* LaunchScreen.storyboard */; };
+		E4BE4140270FDE0D00F32100 /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BE413E270FDE0D00F32100 /* TravelTableViewCell.swift */; };
+		E4BE4141270FDE0D00F32100 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BE413F270FDE0D00F32100 /* TravelTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +25,13 @@
 		E48AC9EC26D43C6B0002EB85 /* goTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48AC9EF26D43C6B0002EB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48AC9F126D43C6B0002EB85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E48AC9F326D43C6B0002EB85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E48AC9F626D43C6B0002EB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E48AC9F326D43C6B0002EB85 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E48AC9F626D43C6B0002EB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E48AC9F826D43C6C0002EB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E48AC9FB26D43C6C0002EB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E48AC9FD26D43C6C0002EB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BE413E270FDE0D00F32100 /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		E4BE413F270FDE0D00F32100 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				E4538BD0270B6A84004ED474 /* Header */,
-				E48AC9F326D43C6B0002EB85 /* ViewController.swift */,
-				E48AC9F526D43C6B0002EB85 /* Main.storyboard */,
+				E4BE413D270FDDA700F32100 /* Cells */,
+				E48AC9F326D43C6B0002EB85 /* HomeViewController.swift */,
+				E48AC9F526D43C6B0002EB85 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -111,6 +116,15 @@
 				E4538BCC270B697E004ED474 /* Sources */,
 			);
 			path = goTravel;
+			sourceTree = "<group>";
+		};
+		E4BE413D270FDDA700F32100 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E4BE413E270FDE0D00F32100 /* TravelTableViewCell.swift */,
+				E4BE413F270FDE0D00F32100 /* TravelTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +187,8 @@
 				E48AC9FC26D43C6C0002EB85 /* LaunchScreen.storyboard in Resources */,
 				E416136B26D5B35C0078ABCC /* HomeTableViewHeader.xib in Resources */,
 				E48AC9F926D43C6C0002EB85 /* Assets.xcassets in Resources */,
-				E48AC9F726D43C6B0002EB85 /* Main.storyboard in Resources */,
+				E48AC9F726D43C6B0002EB85 /* Home.storyboard in Resources */,
+				E4BE4141270FDE0D00F32100 /* TravelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E48AC9F426D43C6B0002EB85 /* ViewController.swift in Sources */,
+				E48AC9F426D43C6B0002EB85 /* HomeViewController.swift in Sources */,
 				E416136D26D5B4D50078ABCC /* HomeTableViewHeader.swift in Sources */,
 				E48AC9F026D43C6B0002EB85 /* AppDelegate.swift in Sources */,
+				E4BE4140270FDE0D00F32100 /* TravelTableViewCell.swift in Sources */,
 				E48AC9F226D43C6B0002EB85 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,12 +210,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E48AC9F526D43C6B0002EB85 /* Main.storyboard */ = {
+		E48AC9F526D43C6B0002EB85 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E48AC9F626D43C6B0002EB85 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		E48AC9FA26D43C6C0002EB85 /* LaunchScreen.storyboard */ = {
