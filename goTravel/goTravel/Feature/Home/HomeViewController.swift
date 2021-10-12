@@ -19,27 +19,32 @@ class ViewController: UIViewController {
     // MARK: Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewCellTravels.dataSource = self
-        tableViewCellTravels.delegate = self
-        
+        configTableView()
         view.backgroundColor = UIColor(displayP3Red: 30.0/225.0, green: 59.0/225.0, blue: 119.0/225.0, alpha: 1)
     }
     
     // MARK: Actions
     
     // MARK: Methods
+    func configTableView(){
+        tableViewCellTravels.register(UINib(nibName: "TravelTableViewCell", bundle: nil),
+                                      forCellReuseIdentifier: "TravelTableViewCell")
+        tableViewCellTravels.dataSource = self
+        tableViewCellTravels.delegate = self
+        
+    }
 }
 
 extension ViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return sessaoDeViagens?[section].numeroDeLinhas ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        
-        cell.textLabel?.text = "Viagem \(indexPath.row)"
-        return cell
+        guard let cellTravel = tableView.dequeueReusableCell(withIdentifier: "TravelTableViewCell") as? TravelTableViewCell else {
+            fatalError("Deu Ruim")
+        }
+        return cellTravel
     }
 }
 
@@ -52,6 +57,10 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
 }
 
