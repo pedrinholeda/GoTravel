@@ -44,7 +44,16 @@ extension ViewController:UITableViewDataSource {
         guard let cellTravel = tableView.dequeueReusableCell(withIdentifier: "TravelTableViewCell") as? TravelTableViewCell else {
             fatalError("Deu Ruim")
         }
-        return cellTravel
+        
+        let viewModel = sessaoDeViagens?[indexPath.section]
+        
+        switch viewModel?.tipo {
+        case .destaques:
+            cellTravel.configCell(viewModel?.viagens[indexPath.row])
+            return cellTravel
+        default:
+            return UITableViewCell()
+        }
     }
 }
 
