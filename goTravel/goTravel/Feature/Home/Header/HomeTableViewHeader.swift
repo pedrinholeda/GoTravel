@@ -26,7 +26,7 @@ class HomeTableViewHeader: UIView {
     // MARK: Methods
     func configHeader() {
         viewHeader.backgroundColor = UIColor(displayP3Red: 30.0/225.0, green: 59.0/225.0, blue: 119.0/225.0, alpha: 1)
-        viewHeader.layer.cornerRadius = 500
+        viewHeader.layer.cornerRadius = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 500 : 200
         viewHeader.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         
         viewBanner.layer.cornerRadius = 10
