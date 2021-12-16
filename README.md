@@ -1,4 +1,4 @@
-# goTravel
+# GoTravel
 
 ## 📋 Descrição
 
@@ -7,11 +7,11 @@
 ### =)
 ## 📲 ScreenShots
 
-### Ainda sem prints
+![](./images/print1.png)
 
 ## 🖥️ Tecnologias
 
 - Swift
 
 ## 🎨 Projeto
-*✓ Em construção (sujeito a melhorias)*
+*✓ Finalizado*
